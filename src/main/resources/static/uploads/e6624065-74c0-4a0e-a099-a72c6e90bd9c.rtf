@@ -1,0 +1,76 @@
+{\rtf1\ansi\ansicpg1254\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 package _practice_;\
+\
+import java.util.Scanner;\
+\
+/**\
+ *\
+ * @author selenkosoglu\
+ */\
+public class MainMethod \{\
+\
+    public static void main(String[] args) \{\
+        Scanner scan = new Scanner(System.in);\
+        System.out.println("\uc0\u350 ifre en az 6 karakter i\'e7ermeli");\
+        System.out.println("\uc0\u350 ifre en az 1 say\u305 sal de\u287 er i\'e7ermeli");\
+        System.out.println("\uc0\u350 ifre en az 1 harf i\'e7ermeli");\
+        System.out.println("\uc0\u350 ifre en az 1 b\'fcy\'fck harf i\'e7ermeli");\
+        System.out.println("\uc0\u350 ifre en az 1 k\'fc\'e7\'fck harf i\'e7ermeli");\
+        String password = scan.nextLine();\
+\
+        if (isValid(password)) \{\
+            System.out.println("\uc0\u350 ifre ge\'e7erli: " + password);\
+        \} else \{\
+            System.out.println("\uc0\u350 ifre ge\'e7ersiz:  " + password);\
+        \}\
+\
+    \}\
+\
+    public static boolean isValid(String password) \{\
+\
+        if (password.length() > 5) \{\
+            return checkPassword(password);\
+        \} \
+        else \{\
+            System.out.println("\uc0\u350 ifre ge\'e7erli de\u287 il");\
+            return false;\
+        \}\
+\
+    \}\
+\
+    public static boolean checkPassword(String password) \{\
+        boolean hasNumber = false;\
+        boolean hasLetter = false;\
+        boolean hasUpper = false;\
+        boolean hasLower = false;\
+        char c;\
+\
+        for (int i = 0; i < password.length(); i++) \{\
+            c = password.charAt(i);\
+            if (Character.isDigit(c)) \{\
+                hasNumber = true;\
+            \} if (Character.isLetter(c)) \{\
+                hasLetter = true;\
+            \} if (Character.isUpperCase(c)) \{\
+                hasUpper = true;\
+            \} if (Character.isLowerCase(c)) \{\
+                hasLower = true;\
+            \}\
+            if (hasNumber && hasLetter && hasUpper && hasLower) \{\
+                return true;\
+            \}\
+        \}\
+        return false;\
+\
+\
+\
+    \}\
+\
+\}\
+}
