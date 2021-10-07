@@ -1,6 +1,22 @@
 # Java Spring Rest Api Service Veterinary Clinic Project
 Description
 
+## Languages and Technologies Used in this Project
+
+| Language / Technology | :arrow_right:  |  % | 
+| ------------- |:-------------:|:-------------:|
+| Java | :arrow_right:  |  90 |
+| REST API | :arrow_right:  |  90 |
+| ElasticSearch | :arrow_right:  |  30 |
+| Redis | :arrow_right:  |  30 |
+| Swagger | :arrow_right:  |  90 |
+
+## Demo Account
+| :closed_lock_with_key: E-Mail | :old_key: Password |
+|----------|----------|
+| **``selen@mail.com``**| **1234**|
+
+
 ## Application Images
 <p>
   
