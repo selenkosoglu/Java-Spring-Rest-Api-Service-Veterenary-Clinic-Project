@@ -1,2 +1,2 @@
-# Java-Spring-Rest-Api-Service-Veterenary-Clinic-Project
+# Java Spring Rest Api Service Veterinary Clinic Project
 Description
