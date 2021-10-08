@@ -1,5 +1,5 @@
 # Java Spring Rest Api Service Veterinary Clinic Project
-The REST API service of the "Vet Clinic - Spring MVC" project. Addition to the MVC project, ElasticSearch, Redis and Swagger was used.
+The REST API service of the "Vet Clinic - Spring MVC" project. Addition to the MVC project, ElasticSearch, Redis and Swagger were used.
 
 ## Languages and Technologies Used in this Project
 
